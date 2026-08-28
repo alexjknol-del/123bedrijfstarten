@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wat is mijn bedrijf waard: rekentool met sectormultiples</title>
+<meta name="description" content="Bereken een indicatieve waarde van een bedrijf op basis van genormaliseerde EBITDA, sector, groei, afhankelijkheid van de eigenaar en klantconcentratie.">
+<link rel="canonical" href="https://123bedrijfstarten.nl/tools/wat-is-mijn-bedrijf-waard/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Wat is mijn bedrijf waard: rekentool met sectormultiples">
+<meta property="og:description" content="Bereken een indicatieve waarde van een bedrijf op basis van genormaliseerde EBITDA, sector, groei, afhankelijkheid van de eigenaar en klantconcentratie.">
+<meta property="og:url" content="https://123bedrijfstarten.nl/tools/wat-is-mijn-bedrijf-waard/">
+<meta property="og:site_name" content="123 Bedrijf Starten">
+<meta property="og:locale" content="nl_NL">
+<link rel="stylesheet" href="/assets/site.css">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="alternate" type="application/rss+xml" title="Nieuws van 123 Bedrijf Starten" href="/rss.xml">
+</head>
+<body>
+<a class="skip" href="#inhoud">Naar de inhoud</a>
+<header class="top"><div class="wrap">
+<a class="brand" href="/">
+<span class="mark" aria-hidden="true"><span>1</span><span>2</span><span>3</span></span>
+<span><b>Bedrijf Starten</b><small>Starten of overnemen</small></span>
+</a>
+<nav class="main" aria-label="Hoofdmenu"><ul><li><a href="/starten-of-overnemen/">Starten of overnemen</a></li><li><a href="/checklists/">Checklists</a></li><li><a href="/tools/" aria-current="page">Rekentools</a></li><li><a href="/verkopen/">Verkopen</a></li><li><a href="/kennisbank/">Kennisbank</a></li><li><a href="/nieuws/">Nieuws</a></li><li><a href="/over/">Over</a></li></ul></nav>
+</div></header>
+<div class="crumbs"><div class="wrap"><nav aria-label="Kruimelpad"><ol><li><a href="/">Home</a></li><li><a href="/tools/">Rekentools</a></li><li>Wat is mijn bedrijf waard</li></ol></nav></div></div>
+<div class="hero"><div class="wrap">
+<p class="kicker">Rekentool</p><h1>Wat is mijn bedrijf waard</h1>
+<p class="lead">Vul de genormaliseerde EBITDA in en de belangrijkste risicofactoren. De tool rekent daar een bandbreedte uit, op basis van gepubliceerde sectormultiples.</p>
+</div></div>
+<main id="inhoud"><div class="wrap"><article>
+
+
+<div class="calc">
+<div class="row">
+  <label for="b_ebitda">Genormaliseerde EBITDA per jaar
+    <small>Bedrijfsresultaat voor rente, belasting en afschrijvingen, gecorrigeerd
+    voor eenmalige posten en een marktconform ondernemersloon.</small></label>
+  <input type="number" id="b_ebitda" value="200000" min="0" step="5000" inputmode="numeric">
+</div>
+<div class="row">
+  <label for="b_sector">Sector
+    <small>Bandbreedtes gebaseerd op de Overname Barometer van Brookz en Dealsuite
+    over de tweede helft van 2025.</small></label>
+  <select id="b_sector">
+    <option value="7.5">Softwareontwikkeling</option>
+    <option value="6.7">IT-dienstverlening</option>
+    <option value="6.5">Zorg en farmacie</option>
+    <option value="5.0" selected>Overig, gemiddelde over alle sectoren</option>
+    <option value="3.3">Horeca, toerisme en recreatie</option>
+    <option value="2.5">Retail</option>
+  </select>
+</div>
+<div class="row">
+  <label for="b_groei">Omzetontwikkeling laatste drie jaar</label>
+  <select id="b_groei">
+    <option value="0.9">Dalend</option>
+    <option value="1" selected>Stabiel</option>
+    <option value="1.1">Groeiend</option>
+    <option value="1.2">Sterk groeiend</option>
+  </select>
+</div>
+<div class="row">
+  <label for="b_eigenaar">Afhankelijkheid van de eigenaar
+    <small>Hoeveel omzet en kennis loopt via de huidige eigenaar persoonlijk.</small></label>
+  <select id="b_eigenaar">
+    <option value="0.8">Groot, eigenaar is het bedrijf</option>
+    <option value="0.9" selected>Gemiddeld</option>
+    <option value="1.05">Klein, managementteam draait zelfstandig</option>
+  </select>
+</div>
+<div class="row">
+  <label for="b_klant">Grootste klant in de omzet</label>
+  <select id="b_klant">
+    <option value="0.85">Meer dan 30 procent</option>
+    <option value="0.95" selected>10 tot 30 procent</option>
+    <option value="1.05">Minder dan 10 procent</option>
+  </select>
+</div>
+<div class="row">
+  <label for="b_terug">Terugkerende omzet
+    <small>Contracten, abonnementen of onderhoud.</small></label>
+  <select id="b_terug">
+    <option value="0.95">Vrijwel geen</option>
+    <option value="1" selected>Een deel</option>
+    <option value="1.12">Overwegend terugkerend</option>
+  </select>
+</div>
+<div class="row">
+  <label for="b_schuld">Rentedragende schulden minus liquide middelen
+    <small>Positief bedrag bij netto schuld, negatief bedrag bij overtollige kas.</small></label>
+  <input type="number" id="b_schuld" value="0" step="5000" inputmode="numeric">
+</div>
+<div class="out">
+  <div class="big" id="b_uit">&nbsp;</div>
+  <div class="sub" id="b_sub">&nbsp;</div>
+  <div class="bars">
+    <div><span>Toegepaste multiple</span><span id="b_mult"></span></div>
+    <div><span>Ondernemingswaarde</span><span id="b_ov"></span></div>
+    <div><span>Netto schuld</span><span id="b_ns"></span></div>
+  </div>
+</div>
+</div>
+<div class="panel"><h3>Let op</h3><p>De uitkomst is een rekenkundige indicatie op basis van de ingevulde gegevens en algemene marktcijfers. Het is geen waardering en geen bod. Een echte waardebepaling kijkt naar jaarrekeningen, contracten, investeringsbehoefte en de markt waarin het bedrijf opereert. Aan de uitkomst zijn geen rechten te ontlenen.</p></div><h2 id="hoe-de-berekening-werkt">Hoe de berekening werkt</h2><p>De tool vermenigvuldigt de genormaliseerde EBITDA met een multiple. Die multiple begint bij het sectorgemiddelde en wordt vervolgens aangepast voor groei, afhankelijkheid van de eigenaar, klantconcentratie en het aandeel terugkerende omzet. Van de uitkomst wordt de netto schuld afgetrokken, omdat een koper een bedrijf koopt inclusief de schulden die erin zitten.</p><div class="tbl"><table><thead><tr><th>Begrip</th><th>Betekenis</th></tr></thead><tbody><tr><td>EBITDA</td><td>Resultaat voor rente, belasting, afschrijvingen en amortisatie</td></tr><tr><td>Normaliseren</td><td>Corrigeren voor eenmalige posten en voor een marktconform loon van de eigenaar, zodat de winst vergelijkbaar wordt</td></tr><tr><td>Multiple</td><td>Het aantal keren de winst dat kopers in een sector betalen</td></tr><tr><td>Ondernemingswaarde</td><td>De waarde van het bedrijf zonder rekening te houden met financiering</td></tr><tr><td>Netto schuld</td><td>Rentedragende schulden verminderd met liquide middelen</td></tr><tr><td>Aandelenwaarde</td><td>Ondernemingswaarde minus netto schuld, het bedrag dat de verkoper ontvangt</td></tr></tbody></table></div><h2 id="waar-de-sectorcijfers-vandaan-komen">Waar de sectorcijfers vandaan komen</h2><p>De multiples in de keuzelijst zijn gebaseerd op de Overname Barometer van Brookz en Dealsuite over de tweede helft van 2025, gepubliceerd in februari 2026. Dat onderzoek werd uitgevoerd onder 291 Nederlandse overnameadviesbureaus en gaat over bedrijven met een omzet tussen 0,5 en 50 miljoen euro. Het gemiddelde over alle sectoren kwam uit op 5,0.</p><h2 id="wat-de-uitkomst-omhoog-of-omlaag-brengt">Wat de uitkomst omhoog of omlaag brengt</h2><h3>Omhoog</h3><ul class="tick"><li>terugkerende omzet uit contracten of onderhoud</li><li>een gespreid klantenbestand zonder dominante afnemer</li><li>een team dat het bedrijf draaiend houdt zonder de eigenaar</li><li>een aantoonbaar groeiende omzet over meerdere jaren</li><li>een administratie die snel en volledig aan te leveren is</li></ul><h3>Omlaag</h3><ul class="tick"><li>een eigenaar die zelf de belangrijkste verkoper of vakman is</li><li>een klant die meer dan dertig procent van de omzet levert</li><li>achterstallig onderhoud aan machines, software of pand</li><li>aflopende contracten zonder verlenging</li><li>cijfers die alleen als samenvatting beschikbaar zijn</li></ul><p>Wat er te doen valt om die factoren te verbeteren staat op <a href="/verkopen/verkoopklaar-ondernemen/">verkoopklaar ondernemen</a>.</p><h2 id="wanneer-een-multiple-niet-werkt">Wanneer een multiple niet werkt</h2><p>Bij een verlieslatend bedrijf, bij een bedrijf dat vooral uit vastgoed of machines bestaat, en bij bedrijven met sterk wisselende resultaten geeft een multiple een misleidend beeld. Dan wordt gekeken naar de intrinsieke waarde, naar de kasstroom over meerdere jaren, of naar wat de losse onderdelen opbrengen. Meer daarover op <a href="/kennisbank/waardebepaling/">waardebepaling</a>.</p><p>Een uitgewerkte waardebepaling voor het MKB verzorgt <a href="https://www.overnameadvies.nl/" target="_blank" rel="nofollow noopener">OvernameAdvies.nl</a>. De toelichting staat op <a href="https://www.overnameadvies.nl/bedrijf-waarderen" target="_blank" rel="nofollow noopener">https://www.overnameadvies.nl/bedrijf-waarderen</a>.</p>
+<div class="related"><h2>Verder lezen</h2><ul><li><a href="/tools/wat-is-mijn-webshop-waard/">Wat is mijn webshop waard</a></li><li><a href="/kennisbank/multiples/">Multiples</a></li><li><a href="/kennisbank/goodwill/">Goodwill</a></li><li><a href="/verkopen/optimaal-verkopen/">Optimaal verkopen</a></li></ul></div>
+</article></div></main>
+<footer><div class="wrap">
+<div class="fgrid"><div><h4>Beginnen</h4><ul><li><a href="/starten-of-overnemen/">Starten of overnemen</a></li><li><a href="/starten-of-overnemen/waarom-overnemen/">Waarom overnemen</a></li><li><a href="/starten-of-overnemen/cijfers-en-onderzoek/">Cijfers en onderzoek</a></li><li><a href="/checklists/bedrijf-beginnen/">Checklist bedrijf beginnen</a></li><li><a href="/checklists/webshop-beginnen/">Checklist webshop beginnen</a></li></ul></div><div><h4>Rekenen</h4><ul><li><a href="/tools/wat-is-mijn-bedrijf-waard/">Wat is mijn bedrijf waard</a></li><li><a href="/tools/wat-is-mijn-webshop-waard/">Wat is mijn webshop waard</a></li><li><a href="/kennisbank/waardebepaling/">Waardebepaling</a></li><li><a href="/kennisbank/multiples/">Multiples</a></li><li><a href="/kennisbank/goodwill/">Goodwill</a></li></ul></div><div><h4>Verkopen</h4><ul><li><a href="/verkopen/wanneer-verkopen/">Wanneer verkopen</a></li><li><a href="/verkopen/optimaal-verkopen/">Optimaal verkopen</a></li><li><a href="/verkopen/verkoopklaar-ondernemen/">Verkoopklaar ondernemen</a></li><li><a href="/verkopen/vijf-stappen/">Vijf stappen</a></li><li><a href="/kennisbank/begrippenlijst/">Begrippenlijst</a></li></ul></div><div><h4>Platform</h4><ul><li><a href="/over/">Over dit platform</a></li><li><a href="/platforms/">Uitgelichte platforms</a></li><li><a href="/video/">Video</a></li><li><a href="/nieuws/">Nieuws</a></li><li><a href="/contact/">Contact</a></li></ul></div></div>
+<div class="fbot">
+<span>&copy; 2026 123 Bedrijf Starten</span>
+<a href="/privacybeleid/">Privacybeleid</a>
+<a href="/cookiebeleid/">Cookiebeleid</a>
+<a href="/contact/">Contact</a>
+<a href="/sitemap.xml">Sitemap</a>
+<span>info@123bedrijfstarten.nl</span>
+</div>
+</div></footer>
+<script>
+(function(){
+  var f=new Intl.NumberFormat('nl-NL',{style:'currency',currency:'EUR',
+    maximumFractionDigits:0});
+  var ids=['b_ebitda','b_sector','b_groei','b_eigenaar','b_klant','b_terug','b_schuld'];
+  function g(id){return parseFloat(document.getElementById(id).value)||0;}
+  function calc(){
+    var e=g('b_ebitda');
+    var m=g('b_sector')*g('b_groei')*g('b_eigenaar')*g('b_klant')*g('b_terug');
+    if(m<1)m=1;
+    var ov=e*m, ns=g('b_schuld'), aw=ov-ns;
+    var lo=aw*0.85, hi=aw*1.15;
+    var uit=document.getElementById('b_uit'), sub=document.getElementById('b_sub');
+    if(e<=0){uit.textContent='Vul een positief resultaat in';
+      sub.textContent='Bij een negatief of nul resultaat werkt een multiple niet. '+
+      'De waarde wordt dan bepaald op basis van activa of vooruitzichten.';
+      document.getElementById('b_mult').textContent='-';
+      document.getElementById('b_ov').textContent='-';
+      document.getElementById('b_ns').textContent='-';return;}
+    uit.textContent=f.format(Math.max(lo,0))+' tot '+f.format(Math.max(hi,0));
+    sub.textContent='Indicatieve bandbreedte voor de waarde van de aandelen, '+
+      'op basis van de ingevulde gegevens.';
+    document.getElementById('b_mult').textContent=m.toFixed(1).replace('.',',')+' x EBITDA';
+    document.getElementById('b_ov').textContent=f.format(ov);
+    document.getElementById('b_ns').textContent=f.format(ns);
+  }
+  ids.forEach(function(id){var el=document.getElementById(id);
+    el.addEventListener('input',calc);el.addEventListener('change',calc);});
+  calc();
+})();
+</script>
+</body>
+</html>
