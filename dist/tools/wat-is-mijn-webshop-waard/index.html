@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wat is mijn webshop waard: rekentool voor e-commerce</title>
+<meta name="description" content="Bereken een indicatieve waarde van een webshop op basis van gecorrigeerde winst, eigen uren, verkeersbronnen, herhaalaankopen en afhankelijkheid van marktplaatsen.">
+<link rel="canonical" href="https://123bedrijfstarten.nl/tools/wat-is-mijn-webshop-waard/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Wat is mijn webshop waard: rekentool voor e-commerce">
+<meta property="og:description" content="Bereken een indicatieve waarde van een webshop op basis van gecorrigeerde winst, eigen uren, verkeersbronnen, herhaalaankopen en afhankelijkheid van marktplaatsen.">
+<meta property="og:url" content="https://123bedrijfstarten.nl/tools/wat-is-mijn-webshop-waard/">
+<meta property="og:site_name" content="123 Bedrijf Starten">
+<meta property="og:locale" content="nl_NL">
+<link rel="stylesheet" href="/assets/site.css">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="alternate" type="application/rss+xml" title="Nieuws van 123 Bedrijf Starten" href="/rss.xml">
+</head>
+<body>
+<a class="skip" href="#inhoud">Naar de inhoud</a>
+<header class="top"><div class="wrap">
+<a class="brand" href="/">
+<span class="mark" aria-hidden="true"><span>1</span><span>2</span><span>3</span></span>
+<span><b>Bedrijf Starten</b><small>Starten of overnemen</small></span>
+</a>
+<nav class="main" aria-label="Hoofdmenu"><ul><li><a href="/starten-of-overnemen/">Starten of overnemen</a></li><li><a href="/checklists/">Checklists</a></li><li><a href="/tools/" aria-current="page">Rekentools</a></li><li><a href="/verkopen/">Verkopen</a></li><li><a href="/kennisbank/">Kennisbank</a></li><li><a href="/nieuws/">Nieuws</a></li><li><a href="/over/">Over</a></li></ul></nav>
+</div></header>
+<div class="crumbs"><div class="wrap"><nav aria-label="Kruimelpad"><ol><li><a href="/">Home</a></li><li><a href="/tools/">Rekentools</a></li><li>Wat is mijn webshop waard</li></ol></nav></div></div>
+<div class="hero"><div class="wrap">
+<p class="kicker">Rekentool</p><h1>Wat is mijn webshop waard</h1>
+<p class="lead">Webshops worden gewaardeerd op de winst die er na correctie voor de eigen uren overblijft, met een factor die afhangt van groei, verkeersbronnen en afhankelijkheden.</p>
+</div></div>
+<main id="inhoud"><div class="wrap"><article>
+
+
+<div class="calc">
+<div class="row">
+  <label for="w_omzet">Jaaromzet exclusief btw</label>
+  <input type="number" id="w_omzet" value="400000" min="0" step="5000" inputmode="numeric">
+</div>
+<div class="row">
+  <label for="w_winst">Genormaliseerde jaarwinst
+    <small>Winst voor belasting, gecorrigeerd voor eenmalige posten en voor de
+    uren die de eigenaar zelf in de shop steekt.</small></label>
+  <input type="number" id="w_winst" value="60000" step="1000" inputmode="numeric">
+</div>
+<div class="row">
+  <label for="w_uren">Eigen uren per week
+    <small>Wordt gecorrigeerd tegen 45 euro per uur, omdat een koper die uren moet
+    invullen of betalen.</small></label>
+  <input type="number" id="w_uren" value="10" min="0" max="80" step="1" inputmode="numeric">
+</div>
+<div class="row">
+  <label for="w_groei">Omzetontwikkeling laatste twee jaar</label>
+  <select id="w_groei">
+    <option value="0.75">Dalend</option>
+    <option value="1" selected>Stabiel</option>
+    <option value="1.2">Groeiend</option>
+    <option value="1.4">Sterk groeiend</option>
+  </select>
+</div>
+<div class="row">
+  <label for="w_verkeer">Belangrijkste bron van bezoekers</label>
+  <select id="w_verkeer">
+    <option value="0.8">Overwegend betaalde advertenties</option>
+    <option value="1" selected>Gemengd</option>
+    <option value="1.2">Overwegend organisch en direct</option>
+  </select>
+</div>
+<div class="row">
+  <label for="w_herhaal">Aandeel herhaalaankopen</label>
+  <select id="w_herhaal">
+    <option value="0.9">Laag, onder 15 procent</option>
+    <option value="1" selected>Gemiddeld</option>
+    <option value="1.15">Hoog, boven 35 procent</option>
+  </select>
+</div>
+<div class="row">
+  <label for="w_afh">Afhankelijkheid van een marktplaats of een leverancier</label>
+  <select id="w_afh">
+    <option value="0.8">Groot</option>
+    <option value="0.95" selected>Gemiddeld</option>
+    <option value="1.1">Klein</option>
+  </select>
+</div>
+<div class="row">
+  <label for="w_voorraad">Voorraadwaarde die mee overgaat
+    <small>Wordt bovenop de waarde van de onderneming geteld.</small></label>
+  <input type="number" id="w_voorraad" value="25000" min="0" step="1000" inputmode="numeric">
+</div>
+<div class="out">
+  <div class="big" id="w_uit">&nbsp;</div>
+  <div class="sub" id="w_sub">&nbsp;</div>
+  <div class="bars">
+    <div><span>Gecorrigeerde winst</span><span id="w_sde"></span></div>
+    <div><span>Toegepaste factor</span><span id="w_fac"></span></div>
+    <div><span>Winst als percentage van de omzet</span><span id="w_marge"></span></div>
+  </div>
+</div>
+</div>
+<div class="panel"><h3>Let op</h3><p>De uitkomst is een rekenkundige indicatie op basis van de ingevulde gegevens en algemene marktcijfers. Het is geen waardering en geen bod. Een echte waardebepaling kijkt naar jaarrekeningen, contracten, investeringsbehoefte en de markt waarin het bedrijf opereert. Aan de uitkomst zijn geen rechten te ontlenen.</p></div><h2 id="waarom-de-eigen-uren-eraf-gaan">Waarom de eigen uren eraf gaan</h2><p>Bij veel webshops doet de eigenaar zelf de inkoop, de content, de verzending en de klantvragen. Die uren staan niet in de winst-en-verliesrekening, maar een koper moet ze wel invullen of betalen. De tool rekent daarom 45 euro per uur, over 46 werkbare weken per jaar, van de winst af. Een shop die 60.000 euro winst maakt met 20 uur eigen werk per week houdt daardoor aanzienlijk minder over dan een shop die hetzelfde verdient met vijf uur.</p><h2 id="wat-de-factor-bepaalt">Wat de factor bepaalt</h2><div class="tbl"><table><thead><tr><th>Factor</th><th>Effect op de waarde</th></tr></thead><tbody><tr><td>Groei van de omzet</td><td>Een dalende omzet drukt de factor het hardst van alle variabelen, omdat een koper de daling doortrekt</td></tr><tr><td>Bron van het verkeer</td><td>Organisch en direct verkeer is stabieler dan verkeer dat elke maand opnieuw ingekocht moet worden</td></tr><tr><td>Herhaalaankopen</td><td>Terugkerende klanten maken de omzet voorspelbaar</td></tr><tr><td>Afhankelijkheid</td><td>Een shop die vooral op een marktplaats of een leverancier draait, verkoopt lastiger</td></tr><tr><td>Omvang</td><td>Kleine shops halen structureel lagere factoren dan grotere e-commercebedrijven</td></tr></tbody></table></div><h2 id="voorraad-en-losse-onderdelen">Voorraad en losse onderdelen</h2><p>Voorraad wordt bij een webshopovername meestal apart afgerekend, tegen inkoopwaarde en gecorrigeerd voor incourante artikelen. De tool telt de opgegeven voorraadwaarde daarom bovenop de berekende waarde. Ook zaken als een geregistreerde merknaam, een sterke domeinnaam of een e-maillijst kunnen los waarde hebben, ook als de winst laag is.</p><h2 id="als-er-geen-winst-is">Als er geen winst is</h2><p>Een webshop zonder winst is niet automatisch waardeloos. De waarde zit dan in het merk, het domein, het klantenbestand, de voorraad en de posities in zoekresultaten. Kopers rekenen in dat geval eerder met wat het kost om hetzelfde zelf op te bouwen. Dat is een andere rekensom dan een factor maal de winst.</p><h2 id="volgende-stap">Volgende stap</h2><p>Wat er bij een verkoop of overname van een webshop komt kijken staat in de <a href="/checklists/webshop-overnemen/">checklist webshop overnemen</a> en in de gids <a href="/verkopen/">bedrijf verkopen</a>. Een waardebepaling voor webshops en e-commercebedrijven verzorgt <a href="https://www.webshopovername.nl/" target="_blank" rel="nofollow noopener">WebshopOvername.nl</a>, met uitleg op <a href="https://www.webshopovername.nl/overnameadvies/waardebepaling" target="_blank" rel="nofollow noopener">https://www.webshopovername.nl/overnameadvies/waardebepaling</a>.</p>
+<div class="related"><h2>Verder lezen</h2><ul><li><a href="/checklists/webshop-overnemen/">Checklist webshop overnemen</a></li><li><a href="/checklists/webshop-beginnen/">Checklist webshop beginnen</a></li><li><a href="/tools/wat-is-mijn-bedrijf-waard/">Wat is mijn bedrijf waard</a></li><li><a href="/platforms/">Uitgelichte platforms</a></li></ul></div>
+</article></div></main>
+<footer><div class="wrap">
+<div class="fgrid"><div><h4>Beginnen</h4><ul><li><a href="/starten-of-overnemen/">Starten of overnemen</a></li><li><a href="/starten-of-overnemen/waarom-overnemen/">Waarom overnemen</a></li><li><a href="/starten-of-overnemen/cijfers-en-onderzoek/">Cijfers en onderzoek</a></li><li><a href="/checklists/bedrijf-beginnen/">Checklist bedrijf beginnen</a></li><li><a href="/checklists/webshop-beginnen/">Checklist webshop beginnen</a></li></ul></div><div><h4>Rekenen</h4><ul><li><a href="/tools/wat-is-mijn-bedrijf-waard/">Wat is mijn bedrijf waard</a></li><li><a href="/tools/wat-is-mijn-webshop-waard/">Wat is mijn webshop waard</a></li><li><a href="/kennisbank/waardebepaling/">Waardebepaling</a></li><li><a href="/kennisbank/multiples/">Multiples</a></li><li><a href="/kennisbank/goodwill/">Goodwill</a></li></ul></div><div><h4>Verkopen</h4><ul><li><a href="/verkopen/wanneer-verkopen/">Wanneer verkopen</a></li><li><a href="/verkopen/optimaal-verkopen/">Optimaal verkopen</a></li><li><a href="/verkopen/verkoopklaar-ondernemen/">Verkoopklaar ondernemen</a></li><li><a href="/verkopen/vijf-stappen/">Vijf stappen</a></li><li><a href="/kennisbank/begrippenlijst/">Begrippenlijst</a></li></ul></div><div><h4>Platform</h4><ul><li><a href="/over/">Over dit platform</a></li><li><a href="/platforms/">Uitgelichte platforms</a></li><li><a href="/video/">Video</a></li><li><a href="/nieuws/">Nieuws</a></li><li><a href="/contact/">Contact</a></li></ul></div></div>
+<div class="fbot">
+<span>&copy; 2026 123 Bedrijf Starten</span>
+<a href="/privacybeleid/">Privacybeleid</a>
+<a href="/cookiebeleid/">Cookiebeleid</a>
+<a href="/contact/">Contact</a>
+<a href="/sitemap.xml">Sitemap</a>
+<span>info@123bedrijfstarten.nl</span>
+</div>
+</div></footer>
+<script>
+(function(){
+  var f=new Intl.NumberFormat('nl-NL',{style:'currency',currency:'EUR',
+    maximumFractionDigits:0});
+  var ids=['w_omzet','w_winst','w_uren','w_groei','w_verkeer','w_herhaal','w_afh',
+    'w_voorraad'];
+  function g(id){return parseFloat(document.getElementById(id).value)||0;}
+  function calc(){
+    var omzet=g('w_omzet');
+    var sde=g('w_winst')-(g('w_uren')*45*46);
+    var fac=2.4*g('w_groei')*g('w_verkeer')*g('w_herhaal')*g('w_afh');
+    if(omzet<100000&&fac>3)fac=3;
+    if(fac<1)fac=1;
+    var basis=sde*fac, tot=basis+g('w_voorraad');
+    var lo=tot*0.85, hi=tot*1.15;
+    var uit=document.getElementById('w_uit'), sub=document.getElementById('w_sub');
+    document.getElementById('w_sde').textContent=f.format(sde);
+    document.getElementById('w_fac').textContent=fac.toFixed(1).replace('.',',')+' x';
+    document.getElementById('w_marge').textContent= omzet>0 ?
+      (sde/omzet*100).toFixed(1).replace('.',',')+' procent' : '-';
+    if(sde<=0){
+      uit.textContent='Geen waarde op basis van winst';
+      sub.textContent='Na correctie voor de eigen uren blijft er geen winst over. '+
+        'De waarde wordt dan bepaald door voorraad, merk, domein en klantenbestand.';
+      return;}
+    uit.textContent=f.format(lo)+' tot '+f.format(hi);
+    sub.textContent='Indicatieve bandbreedte, inclusief de opgegeven voorraad.';
+  }
+  ids.forEach(function(id){var el=document.getElementById(id);
+    el.addEventListener('input',calc);el.addEventListener('change',calc);});
+  calc();
+})();
+</script>
+</body>
+</html>
