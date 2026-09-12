@@ -529,4 +529,26 @@ PAGES = [
   ("Contact", "/contact/"),
  ],
 },
+{
+ "path": "hulpbronnen/",
+ "crumb": "Hulpbronnen",
+ "title": "Hulpbronnen: externe verwijzingen",
+ "desc": "Externe verwijzingen bij 123 Bedrijf Starten: partijen die een onderwerp "
+         "behandelen dat aan ondernemen raakt maar buiten het bestek van deze site valt.",
+ "kicker": "Naslag",
+ "h1": "Hulpbronnen",
+ "lead": "Externe verwijzingen bij deze site.",
+ "blocks": [
+  ("p", "Onderstaande partijen werken los van 123 Bedrijf Starten. Ze staan hier omdat "
+        "ze een onderwerp behandelen dat aan ondernemen raakt maar buiten het bestek "
+        "van deze site valt."),
+  ("ul", ["<a href=\"https://sabe-verpakkingen.nl/kartonnen-verpakkingen/kartonnen-dozen/\">Kartonnen dozen</a>, "
+          "verzenddozen en golfkarton voor bedrijven die zelf verpakken en verzenden."]),
+  ("p", "123 Bedrijf Starten heeft geen zeggenschap over de inhoud van externe sites."),
+ ],
+ "related": [
+  ("Over dit platform", "/over/"),
+  ("Contact", "/contact/"),
+ ],
+},
 ]
