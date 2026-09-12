@@ -52,6 +52,7 @@ FOOTER_COLS = [
         ("Video", "/video/"),
         ("Nieuws", "/nieuws/"),
         ("Contact", "/contact/"),
+        ("Hulpbronnen", "/hulpbronnen/"),
     ]),
 ]
 
