@@ -565,7 +565,10 @@ PAGES = [
           "<a href=\"https://axento.nl/beleggen/zakelijk/\">vermogensbeheer zakelijk</a>, zakelijk beleggen en vermogensbeheer.",
           "<a href=\"https://care-is.nl/vermogensbeheer/vergelijken/wierda-vermogensbeheer/\">Wierda vermogensbeheer</a>, vergelijking van vermogensbeheerders.",
           "<a href=\"https://ondernemersklankbord.nl/starten/\">eigen bedrijf starten</a>, advies van ervaren oud-ondernemers.",
-          "<a href=\"https://www.crystalloids.com/services/cloud-foundations\">cloud foundations</a>, datafundament op Google Cloud."
+          "<a href=\"https://www.crystalloids.com/services/cloud-foundations\">cloud foundations</a>, datafundament op Google Cloud.",
+          "<a href=\"https://www.repenroer.nl\">schoolmusicals groep 8</a>, afscheidsmusicals met script, muziek en dansvideo's voor basisscholen.",
+          "<a href=\"https://musicalsgroep8.nl/\">musical groep 8</a>, eindmusicals van Rep en Roer met rollen voor de hele klas.",
+          "<a href=\"https://charlottehebels.nl/\">charlottehebels.nl</a>, pianist en toetsenist voor bruiloften, bedrijfsfeesten en theater."
           ]),
   ("p", "123 Bedrijf Starten heeft geen zeggenschap over de inhoud van externe sites."),
  ],
