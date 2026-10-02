@@ -6,7 +6,7 @@ ARTIKELEN = [
 
 {
  "path": 'nieuws/verzekeringen-bij-de-start-van-een-bedrijf/',
- "date": '2026-10-02',
+ "date": '2026-09-28',
  "crumb": 'Verzekeringen bij de start',
  "title": 'Verzekeringen regelen bij de start van een bedrijf',
  "desc": 'Welke verzekeringen bij de start van een bedrijf aan de orde komen, in welke volgorde ze te regelen zijn en wanneer een verzekeringspakket handig is.',
