@@ -5,6 +5,38 @@ from .common import OA_MERK, WO_MERK, oa, wo
 ARTIKELEN = [
 
 {
+ "path": 'nieuws/verzekeringen-bij-de-start-van-een-bedrijf/',
+ "date": '2026-10-02',
+ "crumb": 'Verzekeringen bij de start',
+ "title": 'Verzekeringen regelen bij de start van een bedrijf',
+ "desc": 'Welke verzekeringen bij de start van een bedrijf aan de orde komen, in welke volgorde ze te regelen zijn en wanneer een verzekeringspakket handig is.',
+ "kicker": 'Starten',
+ "h1": 'Verzekeringen regelen bij de start van een bedrijf',
+ "lead": 'Met de inschrijving bij de KVK begint ook het zakelijke risico. Een vaste volgorde helpt om verzekeringen op tijd en zonder overbodige polissen te regelen.',
+ "blocks": [
+  ('p', 'Na de inschrijving bij de KVK staan de administratie, de website en de eerste klanten bovenaan de lijst. Verzekeringen schuiven dan makkelijk naar later. Dat is begrijpelijk, want in de beginfase telt elke uitgave. Het risico is alleen dat zich een schade aandient voordat er iets geregeld is.'),
+  ('p', "Een starter hoeft zich niet overal tegen te verzekeren. Ondernemen is werken voor eigen rekening en risico. Wel is het verstandig de belangrijkste risico's in een vaste volgorde langs te lopen, zodat niets over het hoofd wordt gezien."),
+  ('h2', 'Stap 1: nagaan wat al geregeld is'),
+  ('p', 'Het begint bij de bestaande privépolissen. Een particuliere aansprakelijkheidsverzekering of rechtsbijstandverzekering geeft geen dekking voor het werk als zelfstandige, en ook een zakelijk gebruikte laptop kan buiten de inboedelverzekering vallen. De zorgverzekering is wel verplicht, maar die heeft iedereen in Nederland al.'),
+  ('h2', 'Stap 2: de verplichte autoverzekering'),
+  ('p', 'Wie een bedrijfsauto of bestelbus aanschaft, moet die minimaal WA verzekeren. In de startfase is dat meestal de enige zakelijke verzekering die de wet voorschrijft. Een uitgebreidere dekking is een keuze die afhangt van de waarde en de leeftijd van het voertuig.'),
+  ('h2', 'Stap 3: aansprakelijkheid en rechtsbijstand'),
+  ('p', 'Daarna volgen de basisverzekeringen. Een aansprakelijkheidsverzekering voor bedrijven dekt schade aan personen en spullen van anderen. Wie adviseert, rekent of ontwerpt, kijkt ook naar een beroepsaansprakelijkheidsverzekering voor financiële schade door een beroepsfout. Een zakelijke rechtsbijstandverzekering helpt bij conflicten met klanten, leveranciers of de overheid, bijvoorbeeld over een onbetaalde factuur of een onterechte claim. Opdrachtgevers vragen bovendien soms naar een aansprakelijkheidsverzekering voordat een opdracht start.'),
+  ('h2', 'Stap 4: inkomen en bedrijfsmiddelen'),
+  ('p', "Een arbeidsongeschiktheidsverzekering is voor zzp'ers nog niet verplicht, al zijn er plannen om dat te veranderen. Hoe die verplichting eruit komt te zien, staat nog niet vast. Tot die tijd is het een eigen afweging: hoe lang kan het bedrijf zonder inkomen? Wie gereedschap, apparatuur of voorraad heeft, overweegt daarnaast een inventaris- en goederenverzekering, en wie een eigen pand heeft een bedrijfspandverzekering."),
+  ('p', 'Welke verzekeringen bij een bepaald beroep horen, verschilt sterk. Een toelichting per verzekering, inclusief het verschil tussen bedrijfs- en beroepsaansprakelijkheid, staat op <a href="https://snelvoorelkaar.nl/welke-verzekeringen-heb-ik-nodig-als-zzp/" target="_blank" rel="noopener">https://snelvoorelkaar.nl/welke-verzekeringen-heb-ik-nodig-als-zzp/</a> en is goed bruikbaar als checklist bij de start.'),
+  ('h2', 'Wanneer een pakket handig is'),
+  ('p', 'Wie meerdere verzekeringen nodig heeft, kan ze los afsluiten of combineren in een pakket. Een pakket heeft als voordeel dat er bij schade één aanspreekpunt is en dat het later eenvoudig uit te breiden is. Bij <a href="https://snelvoorelkaar.nl/verzekeringen/zzp-verzekeringspakket/" target="_blank" rel="noopener">Snelvoorelkaar</a> is een zzp-verzekeringspakket samen te stellen uit een aansprakelijkheidsverzekering voor bedrijven, een beroepsaansprakelijkheidsverzekering, een bestuurdersaansprakelijkheidsverzekering en een rechtsbijstandverzekering, vanaf 10 euro per maand. Hoe meer onderdelen verzekerd zijn, hoe hoger de korting.'),
+  ('p', 'Een pakket past vooral bij een starter die meteen twee of meer van deze verzekeringen nodig heeft. De samenstelling hangt af van het soort werk: een adviserend beroep, werk in de uiterlijke verzorging of werk met gereedschap vraagt elk om een andere combinatie. Wie maar één polis nodig heeft, bijvoorbeeld alleen een aansprakelijkheidsverzekering, kan net zo goed een losse verzekering afsluiten.'),
+  ('p', 'Een praktisch punt voor de checklist is het noteren van de ingangsdatum en het verzekerd bedrag per polis. Naast de eisen in de eerste contracten gelegd, blijkt dan direct of een opdrachtgever een hoger bedrag vraagt dan er verzekerd is.'),
+ ],
+ "related": [
+  ("Checklist bedrijf beginnen", "/checklists/bedrijf-beginnen/"),
+  ("Nieuws", "/nieuws/"),
+ ],
+},
+
+{
  "path": 'nieuws/maatwerkbekabeling-in-technische-toepassingen/',
  "date": '2026-09-17',
  "crumb": 'Maatwerkbekabeling',
