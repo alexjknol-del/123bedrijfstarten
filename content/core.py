@@ -571,7 +571,8 @@ PAGES = [
           "<a href=\"https://charlottehebels.nl/\">charlottehebels.nl</a>, pianist en toetsenist voor bruiloften, bedrijfsfeesten en theater.",
           "<a href=\"https://www.bijdeboefjes.nl/groepsaccommodatie-drenthe-20-personen\">Bij de Boefjes</a>, groepsaccommodatie voor 20 personen.",
           "<a href=\"https://boersmapanelen.nl/\">Boersma panelen</a>, 4AK gipsplaten en vinyl plafondplaten.",
-          "<a href=\"https://www.bijdeboefjes.nl/vergaderarrangementen/vergaderlocatie-bij-assen\">Vergaderen Assen</a>, vergaderlocatie en vergaderarrangementen bij Assen."
+          "<a href=\"https://www.bijdeboefjes.nl/vergaderarrangementen/vergaderlocatie-bij-assen\">Vergaderen Assen</a>, vergaderlocatie en vergaderarrangementen bij Assen.",
+          "<a href=\"https://www.telefoongigant.nl/\">telefoongigant.nl</a>, refurbished telefoons met garantie."
           ]),
   ("p", "123 Bedrijf Starten heeft geen zeggenschap over de inhoud van externe sites."),
  ],
