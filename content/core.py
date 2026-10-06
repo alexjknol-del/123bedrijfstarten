@@ -568,7 +568,10 @@ PAGES = [
           "<a href=\"https://www.crystalloids.com/services/cloud-foundations\">cloud foundations</a>, datafundament op Google Cloud.",
           "<a href=\"https://www.repenroer.nl\">schoolmusicals groep 8</a>, afscheidsmusicals met script, muziek en dansvideo's voor basisscholen.",
           "<a href=\"https://musicalsgroep8.nl/\">musical groep 8</a>, eindmusicals van Rep en Roer met rollen voor de hele klas.",
-          "<a href=\"https://charlottehebels.nl/\">charlottehebels.nl</a>, pianist en toetsenist voor bruiloften, bedrijfsfeesten en theater."
+          "<a href=\"https://charlottehebels.nl/\">charlottehebels.nl</a>, pianist en toetsenist voor bruiloften, bedrijfsfeesten en theater.",
+          "<a href=\"https://www.bijdeboefjes.nl/groepsaccommodatie-drenthe-20-personen\">Bij de Boefjes</a>, groepsaccommodatie voor 20 personen.",
+          "<a href=\"https://boersmapanelen.nl/\">Boersma panelen</a>, 4AK gipsplaten en vinyl plafondplaten.",
+          "<a href=\"https://www.bijdeboefjes.nl/vergaderarrangementen/vergaderlocatie-bij-assen\">Vergaderen Assen</a>, vergaderlocatie en vergaderarrangementen bij Assen."
           ]),
   ("p", "123 Bedrijf Starten heeft geen zeggenschap over de inhoud van externe sites."),
  ],
