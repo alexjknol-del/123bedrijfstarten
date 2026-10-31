@@ -470,8 +470,16 @@ def build():
     for p in PAGES:
         PAGE_TITLES[p["path"]] = p.get("crumb", p["h1"])
 
+    # dist/img/ bevat handmatig geuploade foto's en blijft bij een rebuild staan
     if os.path.isdir(OUT):
-        shutil.rmtree(OUT)
+        for naam in os.listdir(OUT):
+            if naam == "img":
+                continue
+            pad = os.path.join(OUT, naam)
+            if os.path.isdir(pad):
+                shutil.rmtree(pad)
+            else:
+                os.remove(pad)
     os.makedirs(os.path.join(OUT, "assets"))
 
     with open(os.path.join(OUT, "assets", "site.css"), "w", encoding="utf-8") as f:
