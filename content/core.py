@@ -573,7 +573,8 @@ PAGES = [
           "<a href=\"https://boersmapanelen.nl/\">Boersma panelen</a>, 4AK gipsplaten en vinyl plafondplaten.",
           "<a href=\"https://www.bijdeboefjes.nl/vergaderarrangementen/vergaderlocatie-bij-assen\">Vergaderen Assen</a>, vergaderlocatie en vergaderarrangementen bij Assen.",
           "<a href=\"https://www.telefoongigant.nl/\">telefoongigant.nl</a>, refurbished telefoons met garantie.",
-          "<a href=\"https://werkvloeracademie.nl/cursus-effectief-communiceren/\">cursus effectief communiceren</a>, training voor heldere communicatie op de werkvloer."
+          "<a href=\"https://werkvloeracademie.nl/cursus-effectief-communiceren/\">cursus effectief communiceren</a>, training voor heldere communicatie op de werkvloer.",
+          "<a href=\"https://lupsonline.nl/\">LupsOnline.nl</a>"
           ]),
   ("p", "123 Bedrijf Starten heeft geen zeggenschap over de inhoud van externe sites."),
  ],
