@@ -5,6 +5,37 @@ from .common import OA_MERK, WO_MERK, oa, wo
 ARTIKELEN = [
 
 {
+ "path": 'nieuws/veiligheid-bij-alleen-werken/',
+ "date": '2026-11-11',
+ "crumb": 'Veilig alleen werken',
+ "title": 'Hoe zorg je voor de veiligheid van medewerkers die alleen werken?',
+ "desc": "Welke risico's alleen werken met zich meebrengt, hoe persoonsalarmering via wifi werkt en welke afspraken met medewerkers nodig zijn.",
+ "kicker": 'Personeel',
+ "h1": 'Hoe zorg je voor de veiligheid van medewerkers die alleen werken?',
+ "lead": "Welke risico's alleen werken met zich meebrengt, hoe persoonsalarmering via wifi werkt en welke afspraken met medewerkers nodig zijn.",
+ "blocks": [
+  ("raw", '<figure class="foto" style="margin:0 0 24px"><img src="/img/nieuws/veiligheid-bij-alleen-werken.jpg" alt="Hand met een smartphone met een bedieningspaneel voor alarmering" width="1200" height="800" loading="eager" style="width:100%;height:auto;border-radius:inherit"></figure>'),
+  ("raw", '<p>Een medewerker sluit &#x27;s avonds alleen het bedrijfspand af. Een schoonmaker werkt in een leeg kantoor en een magazijnmedewerker loopt zonder collega&#x27;s door de opslagruimte. Meestal gaat dat prima. Maar wat gebeurt er als iemand valt of plotseling onwel wordt? Een <a href="https://whyless.nl/oplossingen/persoonsalarmering/">wifi persoonsalarm</a> kan helpen om in zo&#x27;n situatie hulp in te schakelen. Toch begint veilig alleen werken al veel eerder. Waar moet je als ondernemer op letten?</p>'),
+  ("raw", '<h2><strong>Wanneer brengt alleen werken extra risico&#x27;s met zich mee?</strong></h2>'),
+  ("raw", '<p>Alleen werken is niet automatisch gevaarlijk. Een administratief medewerker die rustig op kantoor zit, loopt andere risico&#x27;s dan iemand die zware machines bedient. Vooral de werkzaamheden en de omgeving bepalen hoe groot het risico is. Denk aan medewerkers die op hoogte werken, zware spullen verplaatsen of met gevaarlijke stoffen omgaan. Ook de bereikbaarheid speelt mee. In een groot magazijn kan iemand achterin het gebouw werken zonder dat collega&#x27;s direct merken dat er iets misgaat.</p>'),
+  ("raw", '<h2><strong>Wat gebeurt er als een medewerker plotseling hulp nodig heeft?</strong></h2>'),
+  ("raw", '<p>Stel dat een schoonmaker tijdens een avonddienst van een trap valt. Het gebouw is vrijwel leeg en de dichtstbijzijnde collega zit thuis. Een mobiele telefoon kan uitkomst bieden, maar alleen wanneer de medewerker die kan pakken en gebruiken. Daarom bestaan er persoonsalarmsystemen waarmee iemand via een knop een melding kan versturen. Sommige systemen beschikken ook over functies die beweging of een mogelijke val detecteren.</p>'),
+  ("raw", '<h2><strong>Hoe werkt persoonsalarmering via wifi?</strong></h2>'),
+  ("raw", '<p>Bij persoonsalarmering via wifi gebruikt een apparaat het draadloze netwerk om alarmmeldingen door te geven. Dat kan handig zijn in gebouwen waar al een betrouwbaar wifinetwerk aanwezig is. Denk aan kantoren, zorglocaties en bedrijfsruimtes. Toch moet je goed kijken naar het bereik. Een netwerk dat prima werkt bij de receptie, heeft mogelijk een zwak signaal in een kelder of achterin een magazijn.</p>'),
+  ("raw", '<p>Ook stroomuitval en netwerkstoringen verdienen aandacht. Controleer daarom of het systeem een noodvoorziening of alternatieve verbinding heeft. Op <a href="https://whyless.nl/">Whyless</a> staat informatie over draadloze communicatieoplossingen en persoonsalarmering. Bij het vergelijken van systemen is het verstandig om te kijken welke verbindingen worden ondersteund en hoe alarmmeldingen worden afgehandeld.</p>'),
+  ("raw", '<h2><strong>Welke afspraken maak je met medewerkers?</strong></h2>'),
+  ("raw", '<p>Een alarmsysteem helpt weinig wanneer niemand weet hoe het werkt. Daarom hoort een duidelijke werkwijze bij de voorbereiding. Bespreek met medewerkers wanneer zij alarm moeten slaan. Leg ook uit wat er gebeurt nadat iemand op de alarmknop drukt. Wie neemt contact op? Hoe wordt vastgesteld waar de medewerker zich bevindt? En wanneer moeten hulpdiensten worden ingeschakeld? Test deze afspraken regelmatig. Zo ontdek je of meldingen goed aankomen en of de aangewezen contactpersonen bereikbaar zijn.</p>'),
+  ("raw", '<h2><strong>Hoe neem je veiligheid mee bij het starten van een bedrijf?</strong></h2>'),
+  ("raw", '<p>Bij het starten van een onderneming gaat veel aandacht naar klanten, apparatuur en huisvesting. De veiligheid van medewerkers krijgt soms pas aandacht wanneer het bedrijf groeit. Toch is het verstandig om daar vanaf het begin over na te denken. Bekijk welke werkzaamheden medewerkers zelfstandig uitvoeren. Onderzoek vervolgens welke risico&#x27;s daarbij horen en hoe je die kunt beperken.</p>'),
+ ],
+ "related": [
+  ('Checklist bedrijf beginnen', '/checklists/bedrijf-beginnen/'),
+  ('Verzekeringen bij de start', '/nieuws/verzekeringen-bij-de-start-van-een-bedrijf/'),
+  ('Nieuws', '/nieuws/'),
+ ],
+},
+
+{
  "path": 'nieuws/emvi-plan-voor-startende-ondernemers/',
  "date": '2026-10-31',
  "crumb": 'EMVI-plan',
