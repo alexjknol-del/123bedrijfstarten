@@ -574,7 +574,10 @@ PAGES = [
           "<a href=\"https://www.bijdeboefjes.nl/vergaderarrangementen/vergaderlocatie-bij-assen\">Vergaderen Assen</a>, vergaderlocatie en vergaderarrangementen bij Assen.",
           "<a href=\"https://www.telefoongigant.nl/\">telefoongigant.nl</a>, refurbished telefoons met garantie.",
           "<a href=\"https://werkvloeracademie.nl/cursus-effectief-communiceren/\">cursus effectief communiceren</a>, training voor heldere communicatie op de werkvloer.",
-          "<a href=\"https://lupsonline.nl/\">LupsOnline.nl</a>, WordPress-bureau uit Voorthuizen voor het ontwerpen, bouwen, hosten en onderhouden van websites."
+          "<a href=\"https://lupsonline.nl/\">LupsOnline.nl</a>, WordPress-bureau uit Voorthuizen voor het ontwerpen, bouwen, hosten en onderhouden van websites.",
+          "<a href=\"https://www.vanderzwaard.nl/\">vanderzwaard.nl</a>, boekhoudkantoor in Den Haag.",
+          "<a href=\"https://dlsa.nl/\">Letsel advocaat</a>, letselschadeadvocaten.",
+          "<a href=\"https://advocaat-vanwegen.nl\">Advocaat van Wegen</a>, advocatenkantoor met arbeidsrecht in Den Haag."
           ]),
   ("p", "123 Bedrijf Starten heeft geen zeggenschap over de inhoud van externe sites."),
  ],
